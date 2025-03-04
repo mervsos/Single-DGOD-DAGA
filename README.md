@@ -1,3 +1,47 @@
+# Instrucciones para actualizar el código en Google Colab
+
+1.  **Abre un nuevo cuaderno en Google Colab.**
+2.  **Clona el repositorio:**
+
+    ```bash
+    !git clone <URL_de_tu_repositorio>
+    ```
+
+3.  **Navega al directorio del repositorio:**
+
+    ```bash
+    %cd <nombre_de_tu_repositorio>
+    ```
+
+4.  **Actualiza el repositorio:**
+
+    ```bash
+    !git pull origin main
+    ```
+
+5.  **Realiza tus modificaciones.**
+6.  **Confirma y sube los cambios:**
+
+    ```bash
+    !git add .
+    !git commit -m "Descripción de los cambios"
+    !git push origin main
+    ```
+
+7.  **configurar credenciales la primera vez:**
+
+    ```bash
+    !git config --global user.name "TuNombreDeUsuario"
+    !git config --global user.email "tuemail@ejemplo.com"
+    !git remote set-url origin https://<TuNombreDeUsuario>:<TuPAT>@[github.com/](https://github.com/)<TuNombreDeUsuario>/<TuRepositorio>.git
+    ```
+
+    * (Recordar generar el PAT en la pagina de github, gitlab, etc.)
+
+
+
+
+
 # Single-Domain Generalized Object Detection
 
 CVPR2022: Single-Domain Generalized Object Detection in Urban Scene via Cyclic-Disentangled Self-Distillation.
